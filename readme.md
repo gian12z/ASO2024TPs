@@ -10,17 +10,22 @@ c- Lo que paso fue que al eliminar el # y descomentar las lineas el tiempo de ej
 #include <stdio.h>
 #include <stdlib.h>
 
+
 #define NUMBER_OF_THREADS 2
 #define CANTIDAD_INICIAL_HAMBURGUESAS 20
 
+
 int cantidad_restante_hamburguesas = CANTIDAD_INICIAL_HAMBURGUESAS;
 int turno = 0; // Esta linea sirve para declarar la variable turno
+
 
 void *comer_hamburguesa(void *tid)
 {
     while (1 == 1)
     { 
         while(turno!=(int)tid); // Esta linea agreagada sirve para esperar hasta que sea el turno del hilo
+
+        
         // INICIO DE LA ZONA CRÍTICA
         if (cantidad_restante_hamburguesas > 0)
         {
@@ -39,6 +44,8 @@ void *comer_hamburguesa(void *tid)
 
 int main(int argc, char *argv[])
 {
+
+
     pthread_t threads[NUMBER_OF_THREADS];
     int status, i, ret;
 
@@ -61,3 +68,7 @@ int main(int argc, char *argv[])
     pthread_exit(NULL); // como los hilos que cree ya terminaron de ejecutarse, termino yo tambien.
 }
 b-
+<img width="782" alt="Tp3 arq" src="https://github.com/gian12z/ASO2024TPs/assets/115861291/d1d69067-ac8d-49b2-9cde-b5614a2a62a7">
+
+
+
