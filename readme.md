@@ -4,6 +4,8 @@ b- Si lo comparo con mis compañeros los tiempos de ejecucion son muy parecidos 
 c- Lo que paso fue que al eliminar el # y descomentar las lineas el tiempo de ejecucion aumento en comparacion a cuando las lineas 11, 12, 19 y 20 estaban comentadas. Esto sucede porque la linea comentada lo que hace es ejecutar el acumulador 1000 veces, por eso cuando esta comentada el tiempo de ejecucion es menor, porque no se ejecuta el acumulador esas 1000 veces.
 
 2-a A continuacion esta el codigo con las lineas faltantes:
+
+
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
