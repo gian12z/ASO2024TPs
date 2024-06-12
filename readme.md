@@ -14,7 +14,9 @@ Codigo modificado: Al eliminar los comentarios, las acciones de sumar y restar e
 https://github.com/gian12z/ASO2024TPs/blob/master/Tp3/con_race_condition.c
 
 b-
-[diagrama_de_flujo.pdf](https://github.com/user-attachments/files/15794089/diagrama_de_flujo.pdf)
+![TP3_punto_2b](https://github.com/gian12z/ASO2024TPs/assets/115861291/e7d3bc39-7d38-4209-b464-bf74bda631c6)
+
+
 
 
 
